@@ -1,0 +1,177 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: box-border;
+}
+html{
+font-family: sans-serif;
+font-size: 10px;
+background-color: black;
+color: white;
+}
+#header{
+width: 100vw;
+height: 59px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0; z-index: 100;
+background-color: black;
+border-bottom: 1px solid gray;
+}
+#header img{
+width: 80px;
+height: 59px;
+border-right: 1px solid gray; 
+}
+#text{
+font-family: calibari;
+font-size: 1.9em;
+font-weight: bold;
+text-align: center;
+}
+nav {
+width: 50%;
+max-width: 300px;
+height: 50px;
+}
+nav ul{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+align-items: center;
+padding-inline-start: 0;
+margin-block: 0;
+height: 100%;
+}
+nav > ul > li {
+color: linen;
+margin: 0 0.2rem;
+padding: 0.2rem;
+display: block;
+font-size: 1.5em;
+}
+
+nav > ul > li:hover {
+cursor: pointer;
+}
+
+li > a {
+color: inherit;
+text-decoration: none;
+}
+
+#main-section{
+position: relative;
+top: 60px;
+padding: 20px 0;
+}
+
+.mh{
+width: 100vw;
+text-align: center;
+font-size: min(60px,9vw);
+font-weight: bold;
+/* margin-top: 100px; */
+margin-bottom: 2px;
+}
+.mm{
+width: 100vw;
+margin-bottom: 50px;
+}
+
+.flex{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin: 30px;
+}
+.reverse{
+flex-direction: row-reverse;
+}
+
+h2{
+text-align: center;
+font-size: 2em;
+}
+
+.flex-img img{
+width: 40vw;
+}
+.flex-text h2,p{
+width: 40vw;
+text-align: center;
+}
+.flex-text p{
+font-size:1.5em; 
+}
+.border{
+border: 2px solid gray;
+margin:100px 0;
+}
+
+.buy-flex:hover{
+border: 2px solid royalblue;
+border-radius: 3%;
+}
+
+.buy-flex{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.buy-para{
+margin: 5px;
+font-size: 1.5em;
+}
+
+.buy-price{
+font-size: 1.4em;
+font-family: futura;
+}
+
+#support{
+text-align: center;
+font-size: 1.8em;
+color: #62b8ff;
+}
+.border:last-of-type{
+margin-bottom:10px;
+}
+.border:first-of-type{
+margin-top:10px;
+}
+input[type="email"]{
+background-color: black;
+color: gray;
+border: 1px solid royalblue;
+margin: 10px;
+padding: 5px;
+
+}
+input[type="submit"]{
+background-color: lightgreen;
+padding: 5px;
+border: 0;
+}
+
+@media only screen and (max-width: 800px){
+.flex{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.flex-img img{
+    width: 100vw;
+}
+.flex-text h2,p{
+    width: 100vw;
+}
+}
+  
+  
+  
+  
